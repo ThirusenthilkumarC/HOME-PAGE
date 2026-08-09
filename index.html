@@ -1,17 +1,17 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Nova — Creative Digital Experience</title>
+    <title>Home Page</title>
 
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            font-family: Arial, sans-serif;
         }
 
         html {
@@ -19,454 +19,512 @@
         }
 
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #050505;
+            background: #0b1020;
             color: white;
-            overflow-x: hidden;
         }
 
-        /* ================= NAVBAR ================= */
-
+        /* NAVBAR */
         nav {
-            position: fixed;
-            top: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: min(1100px, 90%);
-            padding: 16px 24px;
-
+            width: 100%;
+            padding: 20px 8%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-
-            background: rgba(255,255,255,0.06);
-            backdrop-filter: blur(20px);
-
-            border: 1px solid rgba(255,255,255,0.1);
-            border-radius: 50px;
-
+            position: fixed;
+            top: 0;
             z-index: 1000;
+            background: rgba(11, 16, 32, 0.85);
+            backdrop-filter: blur(12px);
         }
 
         .logo {
-            font-size: 22px;
-            font-weight: 800;
-            letter-spacing: 2px;
+            font-size: 26px;
+            font-weight: bold;
         }
 
         .logo span {
-            color: #8b5cf6;
+            color: #6c63ff;
         }
 
-        nav ul {
+        .nav-links {
             display: flex;
             gap: 30px;
             list-style: none;
         }
 
-        nav a {
-            color: #aaa;
+        .nav-links a {
+            color: white;
             text-decoration: none;
-            font-size: 14px;
             transition: 0.3s;
         }
 
-        nav a:hover {
+        .nav-links a:hover {
+            color: #6c63ff;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 12px;
+        }
+
+        .login {
+            padding: 10px 20px;
+            border: 1px solid #6c63ff;
+            border-radius: 25px;
             color: white;
+            text-decoration: none;
         }
 
-        .nav-btn {
-            padding: 10px 18px;
-            border-radius: 30px;
-            background: white;
-            color: black;
-            font-weight: 600;
+        .signup {
+            padding: 10px 20px;
+            background: #6c63ff;
+            border-radius: 25px;
+            color: white;
+            text-decoration: none;
         }
 
-        /* ================= HERO ================= */
-
+        /* HERO */
         .hero {
             min-height: 100vh;
             display: flex;
             align-items: center;
-            justify-content: center;
-            text-align: center;
-
-            position: relative;
-            overflow: hidden;
+            justify-content: space-between;
+            padding: 120px 8% 60px;
+            gap: 50px;
         }
 
         .hero-content {
-            width: 900px;
-            max-width: 90%;
-
-            animation: heroReveal 1.2s ease forwards;
+            max-width: 600px;
         }
 
-        .badge {
-            display: inline-block;
-            padding: 8px 16px;
-            border: 1px solid rgba(255,255,255,0.15);
-            border-radius: 30px;
-            background: rgba(255,255,255,0.05);
-            color: #bbb;
-            font-size: 13px;
+        .hero-content h1 {
+            font-size: clamp(45px, 6vw, 80px);
+            line-height: 1.05;
             margin-bottom: 25px;
         }
 
-        .hero h1 {
-            font-size: clamp(55px, 9vw, 120px);
-            line-height: 0.95;
-            letter-spacing: -6px;
-
-            background: linear-gradient(
-                90deg,
-                #fff,
-                #8b5cf6,
-                #22d3ee,
-                #fff
-            );
-
-            background-size: 300%;
-            -webkit-background-clip: text;
-            color: transparent;
-
-            animation: gradientMove 6s linear infinite;
+        .hero-content h1 span {
+            color: #6c63ff;
         }
 
-        .hero p {
-            max-width: 600px;
-            margin: 30px auto;
-            color: #999;
+        .hero-content p {
+            color: #b8bfd3;
+            font-size: 18px;
             line-height: 1.7;
-            font-size: 17px;
+            margin-bottom: 35px;
         }
 
-        .buttons {
+        .hero-buttons {
             display: flex;
-            justify-content: center;
             gap: 15px;
-            flex-wrap: wrap;
         }
 
-        .primary {
-            padding: 15px 28px;
-            border-radius: 40px;
-            background: white;
-            color: black;
+        .primary-btn,
+        .secondary-btn {
+            padding: 14px 28px;
+            border-radius: 30px;
             text-decoration: none;
-            font-weight: 700;
             transition: 0.3s;
         }
 
-        .primary:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(255,255,255,0.2);
-        }
-
-        .secondary {
-            padding: 15px 28px;
-            border-radius: 40px;
-            border: 1px solid #333;
+        .primary-btn {
+            background: #6c63ff;
             color: white;
-            text-decoration: none;
-            transition: 0.3s;
         }
 
-        .secondary:hover {
-            background: rgba(255,255,255,0.08);
-            transform: translateY(-5px);
+        .secondary-btn {
+            border: 1px solid #444b63;
+            color: white;
         }
 
-        /* ================= GLOW ================= */
-
-        .glow {
-            position: absolute;
-            width: 500px;
-            height: 500px;
-            border-radius: 50%;
-
-            background: #7c3aed;
-            filter: blur(160px);
-            opacity: 0.25;
-
-            animation: float 8s ease-in-out infinite;
+        .primary-btn:hover {
+            transform: translateY(-4px);
         }
 
-        .glow.one {
-            top: -200px;
-            left: -150px;
+        .secondary-btn:hover {
+            background: #171d34;
         }
 
-        .glow.two {
-            bottom: -200px;
-            right: -150px;
-            background: #06b6d4;
-            animation-delay: 2s;
+        /* HERO IMAGE / CARD */
+        .hero-card {
+            width: 420px;
+            height: 420px;
+            border-radius: 40px;
+            background: linear-gradient(135deg, #6c63ff, #00c6ff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 30px 80px rgba(108, 99, 255, 0.3);
+            animation: floating 4s ease-in-out infinite;
         }
 
-        /* ================= PARTICLES ================= */
-
-        .particle {
-            position: absolute;
-            width: 4px;
-            height: 4px;
-            background: white;
-            border-radius: 50%;
-            opacity: 0.4;
-            animation: particleFloat linear infinite;
+        .hero-card div {
+            width: 260px;
+            height: 260px;
+            border-radius: 30px;
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.3);
+            backdrop-filter: blur(15px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 80px;
         }
 
-        .p1 { left: 10%; top: 30%; animation-duration: 7s; }
-        .p2 { left: 25%; top: 70%; animation-duration: 10s; }
-        .p3 { left: 70%; top: 25%; animation-duration: 8s; }
-        .p4 { left: 85%; top: 65%; animation-duration: 12s; }
-        .p5 { left: 50%; top: 15%; animation-duration: 9s; }
-        .p6 { left: 60%; top: 80%; animation-duration: 11s; }
+        @keyframes floating {
+            0%, 100% {
+                transform: translateY(0);
+            }
 
-        /* ================= SHOWCASE ================= */
+            50% {
+                transform: translateY(-20px);
+            }
+        }
 
-        .showcase {
-            padding: 120px 8%;
+        /* FEATURES */
+        .features {
+            padding: 100px 8%;
             text-align: center;
         }
 
-        .showcase h2 {
-            font-size: clamp(40px, 6vw, 75px);
-            margin-bottom: 20px;
+        .section-title {
+            font-size: 42px;
+            margin-bottom: 15px;
         }
 
-        .showcase > p {
-            color: #888;
-            max-width: 600px;
-            margin: auto;
-            line-height: 1.7;
+        .section-subtitle {
+            color: #9ba3ba;
+            margin-bottom: 50px;
         }
 
-        .cards {
-            margin-top: 70px;
-
+        .feature-container {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 25px;
         }
 
-        .card {
-            height: 350px;
-            border-radius: 25px;
+        .feature-card {
+            padding: 35px;
+            background: #12182b;
+            border: 1px solid #252d46;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
 
-            background: linear-gradient(
-                145deg,
-                rgba(255,255,255,0.1),
-                rgba(255,255,255,0.02)
-            );
+        .feature-card:hover {
+            transform: translateY(-10px);
+            border-color: #6c63ff;
+        }
 
-            border: 1px solid rgba(255,255,255,0.1);
+        .feature-icon {
+            font-size: 45px;
+            margin-bottom: 20px;
+        }
 
+        .feature-card h3 {
+            margin-bottom: 12px;
+        }
+
+        .feature-card p {
+            color: #9ba3ba;
+            line-height: 1.6;
+        }
+
+        /* ABOUT */
+        .about {
+            padding: 100px 8%;
             display: flex;
             align-items: center;
-            justify-content: center;
-
-            font-size: 25px;
-
-            transition: 0.5s;
-
-            transform-style: preserve-3d;
+            gap: 70px;
         }
 
-        .card:hover {
-            transform: translateY(-15px) rotateX(5deg) rotateY(-5deg);
-            border-color: #8b5cf6;
-            box-shadow: 0 30px 80px rgba(124,58,237,0.2);
+        .about-box {
+            flex: 1;
         }
 
-        .card span {
-            color: #aaa;
+        .about-box h2 {
+            font-size: 45px;
+            margin-bottom: 20px;
         }
 
-        /* ================= ANIMATIONS ================= */
-
-        @keyframes heroReveal {
-
-            from {
-                opacity: 0;
-                transform: translateY(50px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .about-box p {
+            color: #aab1c4;
+            line-height: 1.8;
         }
 
-        @keyframes gradientMove {
-
-            0% {
-                background-position: 0%;
-            }
-
-            50% {
-                background-position: 100%;
-            }
-
-            100% {
-                background-position: 0%;
-            }
+        /* CTA */
+        .cta {
+            margin: 80px 8%;
+            padding: 70px 30px;
+            text-align: center;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #6c63ff, #3d8bff);
         }
 
-        @keyframes float {
-
-            0%, 100% {
-                transform: translate(0,0);
-            }
-
-            50% {
-                transform: translate(100px,-70px);
-            }
+        .cta h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
         }
 
-        @keyframes particleFloat {
-
-            0% {
-                transform: translateY(0);
-                opacity: 0;
-            }
-
-            50% {
-                opacity: 0.8;
-            }
-
-            100% {
-                transform: translateY(-200px);
-                opacity: 0;
-            }
+        .cta p {
+            margin-bottom: 30px;
         }
 
-        /* ================= MOBILE ================= */
+        .cta a {
+            display: inline-block;
+            padding: 14px 30px;
+            background: white;
+            color: #222;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-        @media(max-width: 800px) {
+        /* FOOTER */
+        footer {
+            padding: 35px 8%;
+            text-align: center;
+            border-top: 1px solid #252d46;
+            color: #8f97ac;
+        }
 
-            nav ul {
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+
+            .nav-links {
                 display: none;
             }
 
-            .hero h1 {
-                letter-spacing: -3px;
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding-top: 150px;
             }
 
-            .cards {
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .hero-card {
+                width: 320px;
+                height: 320px;
+            }
+
+            .feature-container {
                 grid-template-columns: 1fr;
             }
 
-            .card {
-                height: 250px;
+            .about {
+                flex-direction: column;
+                text-align: center;
             }
         }
 
+        @media (max-width: 500px) {
+
+            nav {
+                padding: 18px 5%;
+            }
+
+            .nav-buttons {
+                display: none;
+            }
+
+            .hero {
+                padding-left: 5%;
+                padding-right: 5%;
+            }
+
+            .hero-content h1 {
+                font-size: 45px;
+            }
+
+            .hero-card {
+                width: 280px;
+                height: 280px;
+            }
+
+            .cta h2 {
+                font-size: 30px;
+            }
+        }
     </style>
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
-
+    <!-- NAVIGATION -->
     <nav>
 
         <div class="logo">
-            N<span>O</span>VA
+            My<span>Website</span>
         </div>
 
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#showcase">Explore</a></li>
-            <li><a href="#">About</a></li>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
         </ul>
 
-        <a href="#" class="nav-btn">
-            Get Started
-        </a>
+        <div class="nav-buttons">
+            <a href="#" class="login">Login</a>
+            <a href="#" class="signup">Sign Up</a>
+        </div>
 
     </nav>
 
 
-    <!-- HERO -->
-
-    <section class="hero">
-
-        <div class="glow one"></div>
-        <div class="glow two"></div>
-
-        <div class="particle p1"></div>
-        <div class="particle p2"></div>
-        <div class="particle p3"></div>
-        <div class="particle p4"></div>
-        <div class="particle p5"></div>
-        <div class="particle p6"></div>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
 
         <div class="hero-content">
 
-            <div class="badge">
-                ✦ Creative Digital Experience
-            </div>
-
             <h1>
-                Build Beyond<br>
-                Imagination.
+                Build Something
+                <span>Amazing.</span>
             </h1>
 
             <p>
-                Discover a new generation of digital experiences
-                where creativity, technology and motion come together.
+                Create a modern digital experience with a clean interface,
+                powerful features and smooth interactions designed for
+                today's users.
             </p>
 
-            <div class="buttons">
+            <div class="hero-buttons">
 
-                <a href="#showcase" class="primary">
-                    Explore Experience →
+                <a href="#features" class="primary-btn">
+                    Get Started →
                 </a>
 
-                <a href="#" class="secondary">
-                    Watch Showreel
+                <a href="#about" class="secondary-btn">
+                    Explore More
                 </a>
 
             </div>
 
         </div>
 
+        <div class="hero-card">
+            <div>🚀</div>
+        </div>
+
     </section>
 
 
-    <!-- SHOWCASE -->
+    <!-- FEATURES -->
+    <section class="features" id="features">
 
-    <section class="showcase" id="showcase">
-
-        <h2>
-            Explore the Future
+        <h2 class="section-title">
+            Powerful Features
         </h2>
 
-        <p>
-            Beautiful interfaces, immersive interactions and
-            experiences designed to make people stop and look.
+        <p class="section-subtitle">
+            Everything you need in one simple platform.
         </p>
 
-        <div class="cards">
+        <div class="feature-container">
 
-            <div class="card">
-                <span>01 — Motion</span>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Fast Performance</h3>
+                <p>
+                    Optimized interface designed for fast loading
+                    and smooth performance.
+                </p>
             </div>
 
-            <div class="card">
-                <span>02 — 3D Worlds</span>
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3>Fully Responsive</h3>
+                <p>
+                    Works perfectly across mobile, tablet and
+                    desktop devices.
+                </p>
             </div>
 
-            <div class="card">
-                <span>03 — Creative UI</span>
+            <div class="feature-card">
+                <div class="feature-icon">🔐</div>
+                <h3>Secure Access</h3>
+                <p>
+                    Simple login and signup experience with
+                    secure user access.
+                </p>
             </div>
 
         </div>
 
     </section>
 
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+
+        <div class="about-box">
+
+            <h2>
+                Designed for the
+                <span>future.</span>
+            </h2>
+
+        </div>
+
+        <div class="about-box">
+
+            <p>
+                Our platform focuses on simplicity, usability and
+                modern design. Every section is carefully designed
+                to provide users with a smooth and engaging experience.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta" id="services">
+
+        <h2>Ready to Get Started?</h2>
+
+        <p>
+            Start exploring our platform today.
+        </p>
+
+        <a href="#">
+            Get Started →
+        </a>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 MyWebsite. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        // Simple button interaction
+        document.querySelectorAll("a").forEach(link => {
+
+            link.addEventListener("click", function () {
+
+                if (this.getAttribute("href") === "#") {
+                    alert("Coming Soon!");
+                }
+
+            });
+
+        });
+
+    </script>
+
 </body>
-</html>
-```
+    </html>
