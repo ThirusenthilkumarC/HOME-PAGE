@@ -1,364 +1,422 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Home Page</title>
+```
+<title>Home Page | Modern Landing Page</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
 
-        html {
-            scroll-behavior: smooth;
-        }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #0f172a;
+        color: #ffffff;
+        line-height: 1.6;
+    }
 
-        body {
-            background: #0b1020;
-            color: white;
-        }
+    /* ================= NAVBAR ================= */
 
-        /* NAVBAR */
-        nav {
-            width: 100%;
-            padding: 20px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: fixed;
-            top: 0;
-            z-index: 1000;
-            background: rgba(11, 16, 32, 0.85);
-            backdrop-filter: blur(12px);
-        }
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+        background: rgba(15, 23, 42, 0.85);
+        backdrop-filter: blur(15px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
 
-        .logo {
-            font-size: 26px;
-            font-weight: bold;
-        }
+    nav {
+        max-width: 1200px;
+        margin: auto;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 25px;
+    }
 
-        .logo span {
-            color: #6c63ff;
-        }
+    .logo {
+        font-size: 25px;
+        font-weight: 800;
+        color: #38bdf8;
+        text-decoration: none;
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 30px;
+    }
+
+    .nav-links a {
+        color: #cbd5e1;
+        text-decoration: none;
+        font-size: 15px;
+        transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+        color: #38bdf8;
+    }
+
+    .nav-buttons {
+        display: flex;
+        gap: 10px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    .login {
+        color: #ffffff;
+        border: 1px solid #38bdf8;
+    }
+
+    .login:hover {
+        background: #38bdf8;
+        color: #0f172a;
+    }
+
+    .signup {
+        background: #38bdf8;
+        color: #0f172a;
+    }
+
+    .signup:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(56, 189, 248, 0.35);
+    }
+
+    /* ================= HERO ================= */
+
+    .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 120px 20px 80px;
+
+        background:
+            radial-gradient(
+                circle at 50% 30%,
+                rgba(56, 189, 248, 0.18),
+                transparent 45%
+            );
+    }
+
+    .hero-content {
+        max-width: 850px;
+    }
+
+    .hero-badge {
+        display: inline-block;
+        padding: 8px 18px;
+        margin-bottom: 25px;
+        border: 1px solid rgba(56, 189, 248, 0.4);
+        border-radius: 30px;
+        color: #38bdf8;
+        background: rgba(56, 189, 248, 0.08);
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: clamp(45px, 7vw, 82px);
+        line-height: 1.05;
+        margin-bottom: 25px;
+    }
+
+    .gradient-text {
+        background: linear-gradient(
+            90deg,
+            #38bdf8,
+            #818cf8,
+            #c084fc
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+        max-width: 650px;
+        margin: auto;
+        color: #94a3b8;
+        font-size: 18px;
+    }
+
+    .hero-buttons {
+        margin-top: 35px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .primary-btn {
+        background: linear-gradient(90deg, #38bdf8, #818cf8);
+        color: white;
+        padding: 14px 28px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: 700;
+        transition: 0.3s;
+    }
+
+    .primary-btn:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 30px rgba(56, 189, 248, 0.3);
+    }
+
+    .secondary-btn {
+        padding: 14px 28px;
+        border-radius: 10px;
+        border: 1px solid #334155;
+        color: white;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .secondary-btn:hover {
+        border-color: #38bdf8;
+        color: #38bdf8;
+    }
+
+    /* ================= COMMON ================= */
+
+    section {
+        padding: 100px 20px;
+    }
+
+    .container {
+        max-width: 1150px;
+        margin: auto;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 55px;
+    }
+
+    .section-title h2 {
+        font-size: 40px;
+        margin-bottom: 12px;
+    }
+
+    .section-title p {
+        color: #94a3b8;
+    }
+
+    /* ================= FEATURES ================= */
+
+    .features {
+        background: #111827;
+    }
+
+    .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    .feature-card {
+        padding: 35px 28px;
+        border-radius: 18px;
+        background: rgba(30, 41, 59, 0.65);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        transition: 0.35s;
+    }
+
+    .feature-card:hover {
+        transform: translateY(-8px);
+        border-color: rgba(56, 189, 248, 0.5);
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+    }
+
+    .feature-icon {
+        width: 55px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 14px;
+        background: rgba(56, 189, 248, 0.12);
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .feature-card h3 {
+        margin-bottom: 10px;
+        font-size: 21px;
+    }
+
+    .feature-card p {
+        color: #94a3b8;
+    }
+
+    /* ================= ABOUT ================= */
+
+    .about-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+    }
+
+    .about-text h2 {
+        font-size: 42px;
+        margin-bottom: 20px;
+    }
+
+    .about-text p {
+        color: #94a3b8;
+        margin-bottom: 18px;
+    }
+
+    .about-box {
+        padding: 45px;
+        border-radius: 25px;
+        background: linear-gradient(
+            135deg,
+            rgba(56, 189, 248, 0.12),
+            rgba(129, 140, 248, 0.08)
+        );
+        border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .about-box h3 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .about-box p {
+        color: #94a3b8;
+    }
+
+    /* ================= CTA ================= */
+
+    .cta {
+        text-align: center;
+    }
+
+    .cta-box {
+        max-width: 900px;
+        margin: auto;
+        padding: 70px 30px;
+        border-radius: 25px;
+        background:
+            linear-gradient(
+                135deg,
+                rgba(56, 189, 248, 0.15),
+                rgba(129, 140, 248, 0.15)
+            );
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .cta-box h2 {
+        font-size: 42px;
+        margin-bottom: 15px;
+    }
+
+    .cta-box p {
+        color: #94a3b8;
+        max-width: 600px;
+        margin: 0 auto 30px;
+    }
+
+    /* ================= FOOTER ================= */
+
+    footer {
+        padding: 35px 20px;
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        background: #020617;
+    }
+
+    footer p {
+        color: #64748b;
+    }
+
+    /* ================= RESPONSIVE ================= */
+
+    @media (max-width: 900px) {
 
         .nav-links {
-            display: flex;
-            gap: 30px;
-            list-style: none;
+            display: none;
         }
 
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            transition: 0.3s;
+        .feature-grid {
+            grid-template-columns: 1fr;
         }
 
-        .nav-links a:hover {
-            color: #6c63ff;
+        .about-content {
+            grid-template-columns: 1fr;
         }
 
-        .nav-buttons {
-            display: flex;
-            gap: 12px;
+    }
+
+    @media (max-width: 600px) {
+
+        nav {
+            padding: 0 15px;
         }
 
-        .login {
-            padding: 10px 20px;
-            border: 1px solid #6c63ff;
-            border-radius: 25px;
-            color: white;
-            text-decoration: none;
+        .nav-buttons .btn {
+            padding: 8px 13px;
+            font-size: 13px;
         }
 
-        .signup {
-            padding: 10px 20px;
-            background: #6c63ff;
-            border-radius: 25px;
-            color: white;
-            text-decoration: none;
-        }
-
-        /* HERO */
         .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 120px 8% 60px;
-            gap: 50px;
+            padding-top: 120px;
         }
 
-        .hero-content {
-            max-width: 600px;
+        .hero p {
+            font-size: 16px;
         }
 
-        .hero-content h1 {
-            font-size: clamp(45px, 6vw, 80px);
-            line-height: 1.05;
-            margin-bottom: 25px;
+        section {
+            padding: 75px 18px;
         }
 
-        .hero-content h1 span {
-            color: #6c63ff;
-        }
-
-        .hero-content p {
-            color: #b8bfd3;
-            font-size: 18px;
-            line-height: 1.7;
-            margin-bottom: 35px;
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 15px;
-        }
-
-        .primary-btn,
-        .secondary-btn {
-            padding: 14px 28px;
-            border-radius: 30px;
-            text-decoration: none;
-            transition: 0.3s;
-        }
-
-        .primary-btn {
-            background: #6c63ff;
-            color: white;
-        }
-
-        .secondary-btn {
-            border: 1px solid #444b63;
-            color: white;
-        }
-
-        .primary-btn:hover {
-            transform: translateY(-4px);
-        }
-
-        .secondary-btn:hover {
-            background: #171d34;
-        }
-
-        /* HERO IMAGE / CARD */
-        .hero-card {
-            width: 420px;
-            height: 420px;
-            border-radius: 40px;
-            background: linear-gradient(135deg, #6c63ff, #00c6ff);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 30px 80px rgba(108, 99, 255, 0.3);
-            animation: floating 4s ease-in-out infinite;
-        }
-
-        .hero-card div {
-            width: 260px;
-            height: 260px;
-            border-radius: 30px;
-            background: rgba(255,255,255,0.12);
-            border: 1px solid rgba(255,255,255,0.3);
-            backdrop-filter: blur(15px);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 80px;
-        }
-
-        @keyframes floating {
-            0%, 100% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(-20px);
-            }
-        }
-
-        /* FEATURES */
-        .features {
-            padding: 100px 8%;
-            text-align: center;
-        }
-
-        .section-title {
-            font-size: 42px;
-            margin-bottom: 15px;
-        }
-
-        .section-subtitle {
-            color: #9ba3ba;
-            margin-bottom: 50px;
-        }
-
-        .feature-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 25px;
-        }
-
-        .feature-card {
-            padding: 35px;
-            background: #12182b;
-            border: 1px solid #252d46;
-            border-radius: 20px;
-            transition: 0.3s;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-10px);
-            border-color: #6c63ff;
-        }
-
-        .feature-icon {
-            font-size: 45px;
-            margin-bottom: 20px;
-        }
-
-        .feature-card h3 {
-            margin-bottom: 12px;
-        }
-
-        .feature-card p {
-            color: #9ba3ba;
-            line-height: 1.6;
-        }
-
-        /* ABOUT */
-        .about {
-            padding: 100px 8%;
-            display: flex;
-            align-items: center;
-            gap: 70px;
+        .section-title h2,
+        .about-text h2,
+        .cta-box h2 {
+            font-size: 32px;
         }
 
         .about-box {
-            flex: 1;
+            padding: 30px;
         }
 
-        .about-box h2 {
-            font-size: 45px;
-            margin-bottom: 20px;
-        }
+    }
+</style>
+```
 
-        .about-box p {
-            color: #aab1c4;
-            line-height: 1.8;
-        }
-
-        /* CTA */
-        .cta {
-            margin: 80px 8%;
-            padding: 70px 30px;
-            text-align: center;
-            border-radius: 30px;
-            background: linear-gradient(135deg, #6c63ff, #3d8bff);
-        }
-
-        .cta h2 {
-            font-size: 42px;
-            margin-bottom: 20px;
-        }
-
-        .cta p {
-            margin-bottom: 30px;
-        }
-
-        .cta a {
-            display: inline-block;
-            padding: 14px 30px;
-            background: white;
-            color: #222;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        /* FOOTER */
-        footer {
-            padding: 35px 8%;
-            text-align: center;
-            border-top: 1px solid #252d46;
-            color: #8f97ac;
-        }
-
-        /* RESPONSIVE */
-        @media (max-width: 900px) {
-
-            .nav-links {
-                display: none;
-            }
-
-            .hero {
-                flex-direction: column;
-                text-align: center;
-                padding-top: 150px;
-            }
-
-            .hero-buttons {
-                justify-content: center;
-            }
-
-            .hero-card {
-                width: 320px;
-                height: 320px;
-            }
-
-            .feature-container {
-                grid-template-columns: 1fr;
-            }
-
-            .about {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-
-        @media (max-width: 500px) {
-
-            nav {
-                padding: 18px 5%;
-            }
-
-            .nav-buttons {
-                display: none;
-            }
-
-            .hero {
-                padding-left: 5%;
-                padding-right: 5%;
-            }
-
-            .hero-content h1 {
-                font-size: 45px;
-            }
-
-            .hero-card {
-                width: 280px;
-                height: 280px;
-            }
-
-            .cta h2 {
-                font-size: 30px;
-            }
-        }
-    </style>
 </head>
 
 <body>
 
-    <!-- NAVIGATION -->
+```
+<!-- ================= NAVIGATION ================= -->
+
+<header>
     <nav>
 
-        <div class="logo">
-            My<span>Website</span>
-        </div>
+        <a href="#" class="logo">NEXORA</a>
 
         <ul class="nav-links">
             <li><a href="#home">Home</a></li>
@@ -368,31 +426,38 @@
         </ul>
 
         <div class="nav-buttons">
-            <a href="#" class="login">Login</a>
-            <a href="#" class="signup">Sign Up</a>
+            <a href="#" class="btn login">Login</a>
+            <a href="#" class="btn signup">Sign Up</a>
         </div>
 
     </nav>
+</header>
 
 
-    <!-- HERO SECTION -->
+<!-- ================= HERO ================= -->
+
+<main>
+
     <section class="hero" id="home">
 
         <div class="hero-content">
 
+            <span class="hero-badge">
+                ✨ Modern Digital Experience
+            </span>
+
             <h1>
                 Build Something
-                <span>Amazing.</span>
+                <span class="gradient-text">Amazing.</span>
             </h1>
 
             <p>
-                Create a modern digital experience with a clean interface,
-                powerful features and smooth interactions designed for
-                today's users.
+                A modern and responsive digital experience designed
+                to help you discover powerful features, explore new
+                possibilities and get started with ease.
             </p>
 
             <div class="hero-buttons">
-
                 <a href="#features" class="primary-btn">
                     Get Started →
                 </a>
@@ -400,56 +465,75 @@
                 <a href="#about" class="secondary-btn">
                     Explore More
                 </a>
-
             </div>
 
-        </div>
-
-        <div class="hero-card">
-            <div>🚀</div>
         </div>
 
     </section>
 
 
-    <!-- FEATURES -->
+    <!-- ================= FEATURES ================= -->
+
     <section class="features" id="features">
 
-        <h2 class="section-title">
-            Powerful Features
-        </h2>
+        <div class="container">
 
-        <p class="section-subtitle">
-            Everything you need in one simple platform.
-        </p>
-
-        <div class="feature-container">
-
-            <div class="feature-card">
-                <div class="feature-icon">⚡</div>
-                <h3>Fast Performance</h3>
+            <div class="section-title">
+                <h2>Powerful Features</h2>
                 <p>
-                    Optimized interface designed for fast loading
-                    and smooth performance.
+                    Everything you need for a modern digital experience.
                 </p>
             </div>
 
-            <div class="feature-card">
-                <div class="feature-icon">📱</div>
-                <h3>Fully Responsive</h3>
-                <p>
-                    Works perfectly across mobile, tablet and
-                    desktop devices.
-                </p>
-            </div>
+            <div class="feature-grid">
 
-            <div class="feature-card">
-                <div class="feature-icon">🔐</div>
-                <h3>Secure Access</h3>
-                <p>
-                    Simple login and signup experience with
-                    secure user access.
-                </p>
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        ⚡
+                    </div>
+
+                    <h3>Fast Performance</h3>
+
+                    <p>
+                        Optimized for speed and smooth interactions
+                        across different devices.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        📱
+                    </div>
+
+                    <h3>Responsive Design</h3>
+
+                    <p>
+                        A flexible interface that looks great on
+                        mobile, tablet and desktop screens.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🔐
+                    </div>
+
+                    <h3>Secure Access</h3>
+
+                    <p>
+                        Designed with a secure and user-friendly
+                        experience in mind.
+                    </p>
+
+                </div>
+
             </div>
 
         </div>
@@ -457,74 +541,179 @@
     </section>
 
 
-    <!-- ABOUT -->
-    <section class="about" id="about">
+    <!-- ================= ABOUT ================= -->
 
-        <div class="about-box">
+    <section id="about">
 
-            <h2>
-                Designed for the
-                <span>future.</span>
-            </h2>
+        <div class="container">
 
-        </div>
+            <div class="about-content">
 
-        <div class="about-box">
+                <div class="about-text">
 
-            <p>
-                Our platform focuses on simplicity, usability and
-                modern design. Every section is carefully designed
-                to provide users with a smooth and engaging experience.
-            </p>
+                    <h2>
+                        Designed for the
+                        <span class="gradient-text">
+                            Future.
+                        </span>
+                    </h2>
+
+                    <p>
+                        This project focuses on creating a clean,
+                        modern and engaging landing page experience
+                        using simple web technologies.
+                    </p>
+
+                    <p>
+                        With responsive layouts, smooth animations,
+                        intuitive navigation and modern UI elements,
+                        the website provides a professional foundation
+                        for future web applications.
+                    </p>
+
+                    <a href="#cta" class="primary-btn">
+                        Learn More →
+                    </a>
+
+                </div>
+
+
+                <div class="about-box">
+
+                    <h3>Modern. Simple. Powerful.</h3>
+
+                    <p>
+                        Built using HTML5, CSS3 and JavaScript with
+                        a focus on responsive design, accessibility,
+                        usability and modern visual experiences.
+                    </p>
+
+                </div>
+
+            </div>
 
         </div>
 
     </section>
 
 
-    <!-- CTA -->
-    <section class="cta" id="services">
+    <!-- ================= SERVICES ================= -->
 
-        <h2>Ready to Get Started?</h2>
+    <section class="features" id="services">
 
-        <p>
-            Start exploring our platform today.
-        </p>
+        <div class="container">
 
-        <a href="#">
-            Get Started →
-        </a>
+            <div class="section-title">
+
+                <h2>Our Services</h2>
+
+                <p>
+                    Flexible solutions for modern digital needs.
+                </p>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🎨
+                    </div>
+
+                    <h3>UI Design</h3>
+
+                    <p>
+                        Clean and engaging interfaces designed
+                        around modern user experience principles.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        💻
+                    </div>
+
+                    <h3>Web Development</h3>
+
+                    <p>
+                        Responsive websites built with modern
+                        frontend technologies.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🚀
+                    </div>
+
+                    <h3>Digital Solutions</h3>
+
+                    <p>
+                        Scalable digital experiences designed
+                        to grow with future requirements.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
 
     </section>
 
 
-    <!-- FOOTER -->
-    <footer>
+    <!-- ================= CTA ================= -->
 
-        <p>
-            © 2026 MyWebsite. All Rights Reserved.
-        </p>
+    <section class="cta" id="cta">
 
-    </footer>
+        <div class="container">
+
+            <div class="cta-box">
+
+                <h2>
+                    Ready to Get Started?
+                </h2>
+
+                <p>
+                    Take the first step toward creating a better
+                    digital experience.
+                </p>
+
+                <a href="#" class="primary-btn">
+                    Start Now →
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
 
 
-    <!-- JAVASCRIPT -->
-    <script>
+<!-- ================= FOOTER ================= -->
 
-        // Simple button interaction
-        document.querySelectorAll("a").forEach(link => {
+<footer>
 
-            link.addEventListener("click", function () {
+    <p>
+        © 2026 Nexora. All Rights Reserved.
+    </p>
 
-                if (this.getAttribute("href") === "#") {
-                    alert("Coming Soon!");
-                }
+    <p>
+        Built with ❤️ using HTML, CSS & JavaScript
+    </p>
 
-            });
-
-        });
-
-    </script>
+</footer>
+```
 
 </body>
-    </html>
+</html>
