@@ -9,7 +9,7 @@ A modern • responsive • interactive homepage built for the next generation o
 <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"/><br/><br/>
 
 <a href="https://github.com/ThirusenthilkumarC">
-<img src="https://img.shields.io/badge/CREATED%20BY-Thiru%20C-8B5CF6?style=for-the-badge&logo=github&logoColor=white" alt="Created by Thiru C"/>
+<img src="https://img.shields.io/badge/CREATED%20BY-Thiru%20C-8B5CF6?style=for-the-badge&logo=github&logoColor=white" alt="Created by Thirusenthilkumar C"/>
 </a>
 <img src="https://img.shields.io/badge/DESIGN-NEON%20EDITION-06B6D4?style=for-the-badge" alt="Neon Design"/>
 <img src="https://img.shields.io/badge/STATUS-IN%20PROGRESS-22C55E?style=for-the-badge" alt="Project Status"/><br/><br/>
@@ -136,7 +136,7 @@ No build tools are required for a basic HTML, CSS, and JavaScript implementation
 
 👨‍💻 Developer
 
-<div align="center" id="developer"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=27&pause=1000&color=8B5CF6&center=true&vCenter=true&width=600&lines=Hey%2C+I'm+Thiru+C+%F0%9F%91%8B;Frontend+Developer+%F0%9F%92%BB;Full+Stack+Developer+%F0%9F%9A%80;UI%2FUX+Enthusiast+%F0%9F%8E%A8;Building+My+Next+Big+Idea..." alt="Animated Developer Introduction"/>Thiru C
+<div align="center" id="developer"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=27&pause=1000&color=8B5CF6&center=true&vCenter=true&width=600&lines=Hey%2C+I'm+Thiru+C+%F0%9F%91%8B;Frontend+Developer+%F0%9F%92%BB;Full+Stack+Developer+%F0%9F%9A%80;UI%2FUX+Enthusiast+%F0%9F%8E%A8;Building+My+Next+Big+Idea..." alt="Animated Developer Introduction"/>Thirusenthilkumar C
 
 Frontend Developer · Full Stack Developer · UI/UX Enthusiast
 
@@ -150,6 +150,6 @@ Frontend Developer · Full Stack Developer · UI/UX Enthusiast
 
 Drop a ⭐ on the repository and support the journey!
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:581C87,50:172554,100:00F5FF&height=160&section=footer&text=CREATE.%20CODE.%20REPEAT.&fontSize=30&fontColor=FFFFFF&fontAlignY=65&animation=fadeIn" width="100%" alt="Animated Footer"/>💜 Made with passion by Thiru C
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:581C87,50:172554,100:00F5FF&height=160&section=footer&text=CREATE.%20CODE.%20REPEAT.&fontSize=30&fontColor=FFFFFF&fontAlignY=65&animation=fadeIn" width="100%" alt="Animated Footer"/>💜 Made with passion by Thirusenthilkumar C
 
 <img src="https://komarev.com/ghpvc/?username=ThirusenthilkumarC&style=for-the-badge&color=8B5CF6&label=VISITORS" alt="Profile Visitors"/></div>
