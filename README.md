@@ -1,4 +1,6 @@
+🏠 HOME PAGE | Next-Gen Web Experience
 
+<div align="center"><img src="https://capsule-render.vercel.app/api?type=venom&height=250&text=HOME%20PAGE&fontSize=75&fontColor=00F5FF&stroke=8B5CF6&strokeWidth=2&animation=fadeIn&color=0:020617,50:172554,100:581C87" width="100%" alt="Animated Home Page Banner"/><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=2500&pause=700&color=00F5FF&center=true&vCenter=true&width=750&lines=Welcome+to+My+Digital+World+%F0%9F%8C%8C;Beyond+Ordinary.+Into+Extraordinary.+%E2%9C%A8;Modern+UI+%7C+Smooth+Animations+%7C+Responsive+Design;Crafted+with+Creativity+%F0%9F%8E%A8;DESIGN.+DEVELOP.+INNOVATE.+%F0%9F%9A%80" alt="Animated Typing Text"/><br/>✦ Turning Simple Ideas Into Beautiful Experiences ✦
 
 A modern • responsive • interactive homepage built for the next generation of the web.
 
