@@ -76,7 +76,16 @@ Modern aesthetics| Smooth interactions| Every screen size
 
 ---
 
+💻 Tech Stack
 
+<div align="center"><img src="https://skillicons.dev/icons?i=html,css,js,git,github,vscode&theme=dark" alt="Technology Stack"/><br/><br/>
+
+HTML5 — Structure
+CSS3 — Styling, transitions and animations
+JavaScript — Interactive behavior
+Git & GitHub — Version control
+
+</div>---
 
 🎨 Neon Design System
 
