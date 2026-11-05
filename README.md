@@ -34,7 +34,44 @@ Modern aesthetics| Smooth interactions| Every screen size
 </div>---
 
 🚀 Features
+<table>
+<tr>
+<td width="50%">🌈 Neon UI
 
+- Cyan and purple accents
+- Modern dark theme
+- Gradient-inspired visuals
+- Glowing design direction
+
+</td>
+<td width="50%">✨ Motion Experience
+
+- Animated typing banner
+- Smooth CSS transitions
+- Interactive hover effects
+- Engaging visual elements
+
+</td>
+</tr>
+<tr>
+<td width="50%">🎯 Modern Components
+
+- Stylish hero section
+- Feature cards
+- Clear CTA buttons
+- Organized content sections
+
+</td>
+<td width="50%">📱 Responsive Layout
+
+- Mobile-friendly structure
+- Flexible layouts
+- Tablet optimization
+- Desktop-ready design
+
+</td>
+</tr>
+</table>
 Note: README animations are provided by external services. Website animations and interactive functionality depend on your actual HTML, CSS, and JavaScript implementation.
 
 ---
