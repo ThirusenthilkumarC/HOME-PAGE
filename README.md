@@ -1,8 +1,4 @@
-
-
-
-
-
+<div align="center">🏠 HOME PAGE🤯 | Next-Gen Web Experience</div>
 <div align="center"><img src="https://capsule-render.vercel.app/api?type=venom&height=250&text=HOME%20PAGE&fontSize=75&fontColor=00F5FF&stroke=8B5CF6&strokeWidth=2&animation=fadeIn&color=0:020617,50:172554,100:581C87" width="100%" alt="Animated Home Page Banner"/><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=24&duration=2500&pause=700&color=00F5FF&center=true&vCenter=true&width=750&lines=Welcome+to+My+Digital+World+%F0%9F%8C%8C;Beyond+Ordinary.+Into+Extraordinary.+%E2%9C%A8;Modern+UI+%7C+Smooth+Animations+%7C+Responsive+Design;Crafted+with+Creativity+%F0%9F%8E%A8;DESIGN.+DEVELOP.+INNOVATE.+%F0%9F%9A%80" alt="Animated Typing Text"/><br/>✦ Turning Simple Ideas Into Beautiful Experiences ✦
 
 A modern • responsive • interactive homepage built for the next generation of the web.
@@ -141,7 +137,7 @@ No build tools are required for a basic HTML, CSS, and JavaScript implementation
 
 <div align="center" id="developer"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=27&pause=1000&color=8B5CF6&center=true&vCenter=true&width=600&lines=Hey%2C+I'm+Thiru+C+%F0%9F%91%8B;Frontend+Developer+%F0%9F%92%BB;Full+Stack+Developer+%F0%9F%9A%80;UI%2FUX+Enthusiast+%F0%9F%8E%A8;Building+My+Next+Big+Idea..." alt="Animated Developer Introduction"/> Thirusenthilkumar C
  
-Frontend Developer · Full Stack Developer · UI/UX Enthusiast
+Frontend Developer · Full Stack Developer · UI/UX Designer
 
 <a href="https://github.com/ThirusenthilkumarC">
 <img src="https://img.shields.io/badge/GitHub-Explore%20My%20World-181717?style=for-the-badge&logo=github" alt="GitHub"/>
@@ -153,6 +149,6 @@ Frontend Developer · Full Stack Developer · UI/UX Enthusiast
 
 Drop a ⭐ on the repository and support the journey!
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:581C87,50:172554,100:00F5FF&height=160&section=footer&text=CREATE.%20CODE.%20REPEAT.&fontSize=30&fontColor=FFFFFF&fontAlignY=65&animation=fadeIn" width="100%" alt="Animated Footer"/>💜 Made with passion by Thirusenthilkumar C
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:581C87,50:172554,100:00F5FF&height=160&section=footer&text=CREATE.%20CODE.%20REPEAT.&fontSize=30&fontColor=FFFFFF&fontAlignY=65&animation=fadeIn" width="100%" alt="Animated Footer"/>💜 Made with passion by Thirusenthilkumar C 😎
 
 <img src="https://komarev.com/ghpvc/?username=ThirusenthilkumarC&style=for-the-badge&color=8B5CF6&label=VISITORS" alt="Profile Visitors"/></div>
