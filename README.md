@@ -153,3 +153,7 @@ Drop a ⭐ on the repository and support the journey!
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:581C87,50:172554,100:00F5FF&height=160&section=footer&text=CREATE.%20CODE.%20REPEAT.&fontSize=30&fontColor=FFFFFF&fontAlignY=65&animation=fadeIn" width="100%" alt="Animated Footer"/>💜 Made with passion by Thirusenthilkumar C 😎
 
 <img src="https://komarev.com/ghpvc/?username=ThirusenthilkumarC&style=for-the-badge&color=8B5CF6&label=VISITORS" alt="Profile Visitors"/></div>
+
+<br>
+<div align="center">
+live at https://thirusenthilkumarc.github.io/HOME-PAGE/
