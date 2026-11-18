@@ -25,7 +25,7 @@ A modern • responsive • interactive homepage built for the next generation o
 
 🌌 The Vision Behind The Design
 
-Not just another homepage — a creative playground for modern frontend development.
+Not just another Homepage — a creative playground for modern frontend development.
 
 This project explores the combination of elegant layouts, glowing neon accents, smooth transitions, responsive components, and interactive web elements to create a visually engaging experience.
 
