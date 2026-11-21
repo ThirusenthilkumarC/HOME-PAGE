@@ -72,9 +72,6 @@ Modern aesthetics| Smooth interactions| Every screen size
 </tr>
 </table>
 Note: README animations are provided by external services. Website animations and interactive functionality depend on your actual HTML, CSS, and JavaScript implementation.
-
----
-
 💻 Tech Stack
 
 <div align="center"><img src="https://skillicons.dev/icons?i=html,css,js,git,github,vscode&theme=dark" alt="Technology Stack"/><br/><br/>
