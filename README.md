@@ -152,6 +152,7 @@ Drop a ⭐ on the repository and support the journey!
 <img src="https://komarev.com/ghpvc/?username=ThirusenthilkumarC&style=for-the-badge&color=8B5CF6&label=VISITORS" alt="Profile Visitors"/></div>
 
 <br>
+<hr>
 <div align="center">
 live at https://thirusenthilkumarc.github.io/HOME-PAGE/
 <hr>
